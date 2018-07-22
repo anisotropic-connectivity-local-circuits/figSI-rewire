@@ -1,0 +1,53 @@
+%\documentclass[crop=true,border=0,convert={density=600}]{standalone}
+\documentclass[margin={-0.55cm, 0.0cm, 0.0cm, 0.3cm}]{standalone}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{overpic}
+\usepackage{tgheros}
+\usepackage[export]{adjustbox}
+\usepackage{calc}
+\usepackage{rotating}
+
+\renewcommand*{\familydefault}{\sfdefault}
+
+
+\begin{document}
+
+\def\xin{0}
+\def\yin{0}
+\def\w{2.6in} % FIX THIS?
+
+\def\xlin{35}
+\def\ylin{-5}
+
+\makeatletter 
+\newcommand\Largeplus{\@setfontsize\semiHuge{10.22}{21.38}}
+\makeatother 
+
+%% \Largeplus
+\footnotesize
+
+\begin{tabular}{@{}l@{}}
+  
+  \begin{overpic}[width=0.49\textwidth]{%
+      /home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_rew-edge-avail.png}%
+    \put(4,46){\textbf{A}}
+  \end{overpic}
+  \begin{overpic}[width=0.49\textwidth]{%
+      /home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_rew-edge-fail.png}%
+    \put(4,46){\textbf{B}}
+  \end{overpic}
+
+  \\[0.2cm]
+  
+  \begin{overpic}[width=\textwidth]{%
+      figC/SI_rew-C.pdf}%
+    \put(2,40.5){\textbf{C}}
+  \end{overpic}
+
+\end{tabular}	
+
+\end{document}
+
+

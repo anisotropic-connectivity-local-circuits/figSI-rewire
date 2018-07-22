@@ -1,0 +1,88 @@
+
+%\documentclass[crop=true,border=0,convert={density=600}]{standalone}
+\documentclass[margin={-0.5cm, -0.3cm, -0.7cm, 0cm}]{standalone}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{overpic}
+\usepackage{tgheros}
+\usepackage[export]{adjustbox}
+\usepackage{calc}
+\usepackage{rotating}
+
+\renewcommand*{\familydefault}{\sfdefault}
+
+
+\begin{document}
+
+\def\xin{0}
+\def\yin{0}
+\def\w{2.6in} % FIX THIS?
+
+\def\xlin{35}
+\def\ylin{-5}
+
+\makeatletter 
+\newcommand\Largeplus{\@setfontsize\semiHuge{13.72}{21.38}}
+\makeatother
+
+%% \Largeplus
+\large
+
+\begin{tabular}{@{}l@{}} 
+
+  \begin{turn}{90}    
+  \hspace{0.98cm}connection 
+  \end{turn}
+  \begin{turn}{90}    
+  \hspace{1.02cm}probability
+  \end{turn}
+    
+  \begin{overpic}[width=\w]%
+    {{{/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_rew-ddcp-ef0.01}}}
+    %\put(-15,65){\LARGE \textbf{B}}
+    %\put(\xin,\yin){\fboxsep=3pt\colorbox{white}{A}}
+  \end{overpic}
+
+  \begin{overpic}[width=\w]%
+    {{{/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_rew-ddcp-ef0.02}}}
+    %\put(\xin,\yin){\fboxsep=3pt\colorbox{white}{B}}
+  \end{overpic}
+
+  \begin{overpic}[width=\w]%
+    {{{/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_rew-ddcp-ef0.05}}}
+    %\put(\xin,\yin){\fboxsep=3pt\colorbox{white}{B}}
+  \end{overpic}
+
+
+  \\[0.3cm]
+
+
+  \begin{turn}{90}    
+  \hspace{0.98cm}connection 
+  \end{turn}
+  \begin{turn}{90}    
+  \hspace{1.02cm}probability
+  \end{turn}
+
+  \begin{overpic}[width=\w]%
+    {{{/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_rew-ddcp-ef0.10}}}
+    \put(\xlin,\ylin){distance}
+  \end{overpic}
+
+  \begin{overpic}[width=\w]%
+    {{{/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_rew-ddcp-ef0.25}}}
+    \put(\xlin,\ylin){distance}
+  \end{overpic}
+
+  \begin{overpic}[width=\w]%
+    {{{/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_rew-ddcp-ef0.50}}}
+    \put(\xlin,\ylin){distance}
+  \end{overpic}
+
+  \vspace{0.75cm}
+
+\end{tabular}	
+
+
+\end{document}
